@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+  font-family: 'montserrat' serif;
+}
+
+:root {
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.montserrat-bold {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+
+
+
+
+.allison-regular {
+  font-family: "Allison", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dynalight-regular {
+  font-family: "Dynalight", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
