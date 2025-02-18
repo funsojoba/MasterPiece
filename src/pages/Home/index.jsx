@@ -37,7 +37,7 @@ const Home = () =>{
             setHours(hours);
             setMinutes(minutes);
             setSeconds(seconds);
-        }, 3000);
+        }, 1000);
 
         return () => clearInterval(interval);
     }, [targetDate]);
@@ -56,7 +56,7 @@ const Home = () =>{
         const interval = setInterval(() => {
             setBackgroundImg(images[index]);
             index = (index + 1) % images.length;
-        }, 2000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
