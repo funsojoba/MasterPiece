@@ -1,15 +1,23 @@
 
 import { useState, useEffect } from "react"
-import { SectionOne, Container, SectionTwo, SectionThree } from "./style"
+import { SectionOne, Container, SectionTwo, SectionThree, CoupleSection, Meet, Story } from "./style"
 
 import logo from "../../assets/logo.png"
 import NavBar from "../../components/Navbar"
+import Footer from "../../components/Footer"
 
 import BG_ONE from "../../assets/BGS/1.jpg"
 import BG_TWO from "../../assets/BGS/2.jpg"
 import BG_THREE from "../../assets/BGS/3.jpg"
 import BG_FOUR from "../../assets/BGS/4.jpg"
 import BG_FIVE from "../../assets/BGS/5.jpg"
+
+import BRIDD_IMG from "../../assets/bride.jpg"
+import GROOM_IMG from "../../assets/groom.jpg"
+import COUPLE_IMG from "../../assets/couple.jpg"
+
+
+
 
 
 
@@ -98,15 +106,61 @@ const Home = () =>{
                     </div>
             </SectionTwo>
 
-            <SectionThree>
+            <CoupleSection>
                 <div className="image">
-
+                    <div className="image-content">
+                        <img src={COUPLE_IMG} alt="couple" />
+                    </div>
                 </div>
                 <div className="text">
-                    
+                    <div className="text-content">
+                        <h2 className="allison-regular">Message From the Couple</h2>
+                        <p className="montserrat-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, provident voluptatem quas accusantium molestias voluptatum ratione ipsam dicta quo quod perspiciatis similique rem quisquam facilis consectetur voluptatibus dolor nemo vel!</p>
+                    </div>
+                </div>
+            </CoupleSection>
+
+            <Meet>
+                <h2 className="montserrat-regular">Meet the Couple</h2>
+            </Meet>
+
+            <SectionThree>
+                <div className="image">
+                    <img src={BRIDD_IMG} alt="bride image" />
+                </div>
+
+                <div className="text">
+                    <div className="text-content">
+                        <h2 className="allison-regular">About the Bride</h2>
+                        <p className="montserrat-regular">Pelumi is a Chattered accountant, and an exceptional young woman who aims to change the world by impacting it positively.</p>
+                    </div>
                 </div>
             </SectionThree>
+            
+            <SectionThree>
+                <div className="text">
+                    <div className="text-content">
+                        <h2 className="allison-regular">About the Bride</h2>
+                        <p className="montserrat-regular">Tobi is a nice guy, I honestly don’t know what he does, he sha comes and goes, but he’s a good boy so no panic</p>
+                    </div>
+                </div>
 
+                <div className="image">
+                    <img src={GROOM_IMG} alt="groom image" />
+                </div>
+
+            </SectionThree>
+
+            <Story>
+                <div className="text">
+                    <h2 className="allison-regular">Our Story</h2>
+                </div>
+                <div className="gallery">
+
+                </div>
+            </Story>
+
+        <Footer />
         </Container>
     )
 }

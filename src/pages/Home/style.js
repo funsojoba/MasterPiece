@@ -20,15 +20,23 @@ export const SectionOne = styled.div`
         position: relative;
         width: 100%;
         height: 100vh;
+        @media only screen and (max-width:850px){
+            height: 80vh;
+        }
 
         .image{
             position: absolute;
             bottom: -20px;
             left: 50%;
             transform: translateX(-50%);
+            width: 450px;
+            
+            @media only screen and (max-width:850px){
+                width: 250px;
+            }
             
             img{
-                width: 450px;
+                width: 100%;
             }
         }
         
@@ -39,9 +47,9 @@ export const SectionOne = styled.div`
 
 
 export const SectionTwo = styled.div`
-    background: #F5F5DC;
+    color: #F5F5DC;
     padding: 20px;
-    color: #550000;
+    background: #550000;
     
     .timer{
         display: flex;
@@ -58,9 +66,10 @@ export const SectionTwo = styled.div`
             position: relative;
             justify-content: center;
             align-items: center;
+            color: #550000;
             
             small{
-                    color: #550000;
+                    color: #F5F5DC;
                     position: absolute;
                     bottom: -18px;
                     left: 50%;
@@ -74,13 +83,17 @@ export const SectionTwo = styled.div`
             justify-content: center;
             align-items: center;
             margin-top: 20px;
-            /* background:rgba(103, 23, 23, 0.44); */
             padding: 10px;
             border-radius: 10px;
 
             h3{
-                color: #550000;
+                color: #F5F5DC;
                 letter-spacing: 15px;
+                
+                @media only screen and (max-width:850px){
+                    letter-spacing: 5px;
+                    text-align: center;
+                }
 
             }
 
@@ -90,17 +103,121 @@ export const SectionTwo = styled.div`
 
 export const SectionThree = styled.div`
     display: flex;
-
-    .image{
-        flex: 1
+    width: 100%;
+    @media only screen and (max-width:850px){
+        flex-direction: column;
+        border-bottom: solid 1px #550000;
     }
 
+    .image{
+        width: 50%;
+        @media only screen and (max-width:850px){
+            width: 100%;
+        }
+        
+        img{
+            width: 100%;
+        }
+    }
+    
     .text{
-        flex: 1;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width:850px){
+            width: 100%;
+        }
+        &-content{
+            padding: 50px;
+
+            h2{
+                color: #550000;
+                font-size: 4em;
+            }
+        }
+    }
+`
+
+export const CoupleSection = styled.div`
+    display: flex;
+    background: #F5F5DC;
+
+    @media only screen and (max-width:850px){
+        flex-direction: column;
+    }
+
+    .image{
+        padding: 50px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @media only screen and (max-width:850px){
+            width: 100%;
+        }
+        
+        &-content{
+            width: 70%;
+            @media only screen and (max-width:850px){
+                width: 100%;
+            }
+
+
+            img{
+                width: 100%;
+                transform: perspective(1000px) rotateY(20deg);
+            }
+        }
+    }
+    .text{
+        width: 50%;
+        padding: 50px 50px 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width:850px){
+            padding: 30px;
+            width: 100%;
+        }
 
         h2{
+            font-size: 4em;
+            @media only screen and (max-width:850px){
+                font-size: 3em;
+            }
             color: #550000;
-            
         }
+    }
+`
+
+export const Meet = styled.div`
+    background: #000;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+`
+
+export const Story = styled.div`
+    display: flex;
+    @media only screen and (max-width:850px){
+        flex-direction: column;
+    }
+    .text{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 4em;
+        }
+    }
+
+    .gallary{
+        flex: 5;
     }
 `
