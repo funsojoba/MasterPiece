@@ -12,6 +12,7 @@ export const FooterDiv = styled.div`
 
     @media only screen and (max-width:850px){
         flex-direction: column;
+        text-align: left;
     }
 
     .date{
@@ -19,13 +20,16 @@ export const FooterDiv = styled.div`
         &-content{
             width: 80%;
             margin: auto;
-
             color: #fff;
         }
     }
 
     .info{
         flex: 1;
+        @media only screen and (max-width:850px){
+            justify-content: flex-start;
+        }
+        
 
         .links a{
             text-decoration: none;
