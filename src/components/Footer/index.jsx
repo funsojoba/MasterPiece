@@ -14,9 +14,10 @@ const Footer = () => {
 
         <div className="info">
             <div className="links">
-                <Link>About</Link>
-                <Link>About</Link>
-                <Link>About</Link>
+                <Link>Home</Link>
+                <Link>RSVP</Link>
+                <Link>STORY</Link>
+                <Link>SCHEDULE</Link>
             </div>
             <div className="buttons">
                 <Link>Send us a gift</Link>

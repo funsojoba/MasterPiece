@@ -11,7 +11,7 @@ export const SectionOne = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(${props => props.backgroundImage});
+    background-image: url(${props => props.background});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -220,4 +220,32 @@ export const Story = styled.div`
     .gallary{
         flex: 5;
     }
+`
+
+export const Men = styled.div`
+    padding: 30px;
+    background: #550000;
+
+    h2{
+        color: #fff;
+        text-align: center;
+        
+    }
+
+`
+
+export const Women = styled.div`
+    background: #F5F5DC;
+    padding: 30px;
+
+    h2{
+        color: #550000;
+        text-align: center;
+    }
+`
+
+export const Footer = styled.div`
+    background: #000;
+    color: #fff;
+    padding: 30px;
 `
