@@ -4,6 +4,7 @@ import './index.css'
 // import App from './App.jsx'
 
 import Home from './pages/Home/index.jsx'
+import Schedule from './pages/Schedule/index.jsx'
 
 import {
   createBrowserRouter,
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/schedule",
+    element: <Schedule />,
   },
 ])
 

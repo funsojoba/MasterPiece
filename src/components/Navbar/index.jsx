@@ -85,10 +85,10 @@ const NavBar = ()=>{
         </Link>
 
         <div className="links">
-            <Link>Home </Link>
+            <Link to="/">Home </Link>
             <Link>RSVP </Link>
             <Link>STORY </Link>
-            <Link>SCHEDULE </Link>
+            <Link to="/schedule">SCHEDULE </Link>
         </div>
         <div className="hambugger">
             <FaBars onClick={handleSetDisplay}/>
