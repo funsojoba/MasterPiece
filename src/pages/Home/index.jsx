@@ -4,12 +4,15 @@ import {
         SectionOne, Container, 
         SectionTwo, SectionThree, 
         CoupleSection, Meet, Story, 
-        Men, Women } from "./style"
+        Men, Women, Image } from "./style"
 
-import { FC, useCallback, useRef, } from 'react';
-import LightGallery from 'lightgallery/react';
-import lgZoom from 'lightgallery/plugins/zoom';
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import Masonry from "react-masonry-css";
+
+
+// import { FC, useCallback, useRef, } from 'react';
+// import LightGallery from 'lightgallery/react';
+// import lgZoom from 'lightgallery/plugins/zoom';
+// import lgThumbnail from 'lightgallery/plugins/thumbnail';
 // import { LightGallery as ILightGallery } from 'lightgallery/lightgallery';
 
 
@@ -28,20 +31,33 @@ import BRIDD_IMG from "../../assets/bride.jpg"
 import GROOM_IMG from "../../assets/groom.jpg"
 import COUPLE_IMG from "../../assets/couple.jpg"
 
-import FUNSO_IMG from "../../assets/MEN/funso.jpg"
+// import FUNSO_IMG from "../../assets/MEN/funso.jpg"
+import FUNSO_IMG_2 from "../../assets/MEN/funso_2.jpg"
 import SAKA_IMG from "../../assets/MEN/saka.jpg"
 import TOMIWA_IMG from "../../assets/MEN/tomiwa.jpg"
 import TOBI_IMG from "../../assets/MEN/tobi.jpg"
+import FAMOUS_IMG from "../../assets/MEN/famous.jpg"
+import AYOBAMI from "../../assets/MEN/ayobami.jpg"
+import DAMILOLA from "../../assets/MEN/damilola.jpg"
+import MARK from "../../assets/MEN/mark.jpg"
+import ERIC from "../../assets/MEN/eric.jpg"
+import AYOOLA from "../../assets/MEN/ayoola.jpg"
+import SUNDAY from "../../assets/MEN/sunday.jpg"
+import DANIEL from "../../assets/MEN/agbaje.jpg"
+import KINGIE from "../../assets/MEN/king-david.jpg"
 
 
 // women
 import ESTHER_IMG from "../../assets/WOMEN/esther.jpg"
 import NIFEMI from "../../assets/WOMEN/nifemi.jpg"
 import IBUKUN from "../../assets/WOMEN/ibukun.jpg"
-import ESTHER_ADETOLA from "../../assets/WOMEN/esther_adetola.jpg"
+import ESTHER_ADETOLA from "../../assets/WOMEN/train.jpg"
 import TITILAYO from "../../assets/WOMEN/titilayo.jpg"
 import PRAISE from "../../assets/WOMEN/praise.jpg"
 import YETUNDE from "../../assets/WOMEN/yetunde.jpg"
+import GIFT from "../../assets/WOMEN/gift.jpg"
+import VIVIAN from "../../assets/WOMEN/vivian.jpg"
+import DAMILOLA_IMG from "../../assets/WOMEN/adejumoke.jpg"
 
 
 
@@ -96,10 +112,16 @@ const Home = () =>{
 
     const mensCard = [
         {
-            image: SAKA_IMG,
-            name: "Olayinka Saka",
-            title: "Business Process Analyst",
-            social: "@sakaolayinka20"
+            image: ERIC,
+            name: "Eric Olakanye ",
+            title: "C.E.O",
+            social: "@eric_kanye_"
+        },
+        {
+            image: MARK,
+            name: "Mark Diji",
+            title: "Legal Practitioner",
+            social: "@Mark_diji"
         },
         {
             image: TOMIWA_IMG,
@@ -114,22 +136,58 @@ const Home = () =>{
             social: "@the_tobikolawole"
         },
         {
-            image: FUNSO_IMG,
+            image: FAMOUS_IMG,
             name: "Famous Paul",
-            title: "Software Engineer",
+            title: "Yahoo Boy",
             social: "@famouspaul"
         },
         {
-            image: FUNSO_IMG,
+            image: SAKA_IMG,
+            name: "Olayinka Saka",
+            title: "Business Process Analyst",
+            social: "@sakaolayinka20"
+        },
+        {
+            image: DAMILOLA,
+            name: "Olaoluwa Damilola",
+            title: "Construction project manager ",
+            social: "@dhamie_laolu"
+        },
+        {
+            image: KINGIE,
+            name: "OlaoKingDavid Ayo-Loto",
+            title: "Digital Creator and Marketing Executive  ",
+            social: "@_kingie_"
+        },
+        {
+            image: AYOBAMI,
+            name: "Ajayi Daniels Ayobami",
+            title: "Missiologist",
+            social: "@danielsayobami"
+        },
+        {
+            image: DANIEL,
+            name: "Daniel Agbaje",
+            title: "Business Development manager",
+            social: "@daniel_agbaje"
+        },
+        {
+            image: FUNSO_IMG_2,
             name: "Folorunso Elujoba",
             title: "Software Engineer",
             social: "@funsojoba"
         },
         {
-            image: FUNSO_IMG,
-            name: "Folorunso Elujoba",
-            title: "Software Engineer",
-            social: "@funsojoba"
+            image: SUNDAY,
+            name: "Sunday Samuel",
+            title: "Field Sales Manager",
+            social: "@Sammyyooh"
+        },
+        {
+            image: AYOOLA,
+            name: "Abraham Ayoola",
+            title: "Product Designer",
+            social: "@haybe_dammy"
         },
     ]
 
@@ -141,10 +199,28 @@ const Home = () =>{
             social: "@theestherakintayo"
         },
         {
+            image: DAMILOLA_IMG,
+            name: "Oluwadamilola Adeyinka",
+            title: "",
+            social: "@dammyy___"
+        },
+        {
+            image: GIFT,
+            name: "Gift Komilogbon",
+            title: "Founder",
+            social: "@gift Komilogbon"
+        },
+        {
             image: NIFEMI,
             name: "Oluwanifemi Olaobaju",
             title: "Financial Control Personnel",
             social: "@_oluwanifemi_"
+        },
+        {
+            image: VIVIAN,
+            name: "Ekeh Vivian Chinaza",
+            title: "Product design",
+            social: "@thevivianekeh"
         },
         {
             image: IBUKUN,
@@ -179,20 +255,34 @@ const Home = () =>{
     ]
 
 
-    const dynamicEl = [
-        {
-            src: BRIDD_IMG,
-            responsive: true,
-            thumb: '...',
-            subHtml: "Pelumi"
-        },
-        {
-            src: GROOM_IMG,
-            responsive: true,
-            subHtml: 'Oluwatobi'
-        },
-    ];
+    // const dynamicEl = [
+    //     {
+    //         src: BRIDD_IMG,
+    //         responsive: true,
+    //         thumb: '...',
+    //         subHtml: "Pelumi"
+    //     },
+    //     {
+    //         src: GROOM_IMG,
+    //         responsive: true,
+    //         subHtml: 'Oluwatobi'
+    //     },
+    // ];
 
+    // const imagesGalary = [
+    //     "https://via.placeholder.com/600x400",
+    //     "https://via.placeholder.com/400x600",
+    //     "https://via.placeholder.com/600x600",
+    //     "https://via.placeholder.com/800x500",
+    //     "https://via.placeholder.com/500x700",
+    //   ];
+      
+      const breakpoints = {
+        default: 4,
+        1100: 3,
+        700: 2,
+        500: 1,
+      };
 
     return (
         <Container>
@@ -281,10 +371,11 @@ const Home = () =>{
                     <h2 className="allison-regular">Our Story</h2>
                 </div>
                 <div className="gallery">
-                    <LightGallery
-                        dynamic={true}
-                        dynamicEl={dynamicEl}
-                    />
+                <Masonry breakpointCols={breakpoints} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+                    {images.map((src, index) => (
+                    <Image key={index} src={src} alt={`Gallery Image ${index}`} />
+                    ))}
+                    </Masonry>
                 </div>
             </Story>
 

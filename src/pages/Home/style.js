@@ -249,3 +249,11 @@ export const Footer = styled.div`
     color: #fff;
     padding: 30px;
 `
+
+
+
+export const Image = styled.img`
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+`;
