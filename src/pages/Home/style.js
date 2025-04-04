@@ -203,6 +203,7 @@ export const Meet = styled.div`
 
 export const Story = styled.div`
     display: flex;
+    background: #F5F5DC;
     @media only screen and (max-width:850px){
         flex-direction: column;
     }
@@ -211,14 +212,22 @@ export const Story = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 50px;
+        @media only screen and (max-width:850px){
+            padding: 30px;
+        }
 
         h2{
             font-size: 4em;
         }
     }
 
-    .gallary{
-        flex: 5;
+    .gallery{
+        flex: 4;
+        padding: 50px;
+        @media only screen and (max-width:850px){
+            padding: 30px;
+        }
     }
 `
 

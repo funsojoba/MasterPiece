@@ -9,13 +9,6 @@ import {
 import Masonry from "react-masonry-css";
 
 
-// import { FC, useCallback, useRef, } from 'react';
-// import LightGallery from 'lightgallery/react';
-// import lgZoom from 'lightgallery/plugins/zoom';
-// import lgThumbnail from 'lightgallery/plugins/thumbnail';
-// import { LightGallery as ILightGallery } from 'lightgallery/lightgallery';
-
-
 import logo from "../../assets/logo.png"
 import NavBar from "../../components/Navbar"
 import Footer from "../../components/Footer"
@@ -45,6 +38,7 @@ import AYOOLA from "../../assets/MEN/ayoola.jpg"
 import SUNDAY from "../../assets/MEN/sunday.jpg"
 import DANIEL from "../../assets/MEN/agbaje.jpg"
 import KINGIE from "../../assets/MEN/king-david.jpg"
+import IFETOBI from "../../assets/MEN/ifetobi.jpg"
 
 
 // women
@@ -60,7 +54,15 @@ import VIVIAN from "../../assets/WOMEN/vivian.jpg"
 import DAMILOLA_IMG from "../../assets/WOMEN/adejumoke.jpg"
 
 
+`
+    TODO
 
+    RSVP
+    GALLERY
+    Content for the couple
+    Story
+    Schedule
+`
 
 
 const Home = () =>{
@@ -111,6 +113,13 @@ const Home = () =>{
     }, []);
 
     const mensCard = [
+        {
+            image: IFETOBI,
+            name: "Ifetobi Olaniyan",
+            title: "Music Producer (Rev Music)",
+            social: "@eife.tobi",
+            is_best_man: true
+        },
         {
             image: ERIC,
             name: "Eric Olakanye ",
@@ -269,14 +278,7 @@ const Home = () =>{
     //     },
     // ];
 
-    // const imagesGalary = [
-    //     "https://via.placeholder.com/600x400",
-    //     "https://via.placeholder.com/400x600",
-    //     "https://via.placeholder.com/600x600",
-    //     "https://via.placeholder.com/800x500",
-    //     "https://via.placeholder.com/500x700",
-    //   ];
-      
+
       const breakpoints = {
         default: 4,
         1100: 3,
@@ -371,7 +373,11 @@ const Home = () =>{
                     <h2 className="allison-regular">Our Story</h2>
                 </div>
                 <div className="gallery">
-                <Masonry breakpointCols={breakpoints} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+                <Masonry 
+                    breakpointCols={breakpoints} 
+                    className="my-masonry-grid" 
+                    columnClassName="my-masonry-grid_column"
+                    >
                     {images.map((src, index) => (
                     <Image key={index} src={src} alt={`Gallery Image ${index}`} />
                     ))}

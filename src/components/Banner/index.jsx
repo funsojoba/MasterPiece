@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import PropTypes from 'prop-types';
 
 
 const BannerDiv = styled.div`
@@ -21,5 +22,8 @@ const Banner = ({background}) => {
         </BannerDiv>
     );
 }
+// Banner.propTypes = {
+//     background: PropTypes.string.isRequired,
+// };
 
 export default Banner;

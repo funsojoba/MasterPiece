@@ -1,4 +1,5 @@
 import { useRef } from "react";
+// import PropTypes from 'prop-types';
 import styled from "styled-components";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -19,7 +20,7 @@ const CardsWrapper = styled.div`
   &::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome, Safari */
   }
-`;
+  `;
 
 const Card = styled.div`
     min-width: 250px;
@@ -31,6 +32,17 @@ const Card = styled.div`
     padding: 10px;
     transition: all 100ms ease-in;
     overflow: hidden;
+    position: relative;
+    .best-man {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 5px;
+      background: #0000006f;
+      border-radius: 5px;
+      color: #fff;
+      font-family: "Montserrat", serif;
+    }
 
     &:hover {
         transform: scale(1.05);
@@ -101,6 +113,9 @@ const ScrollableCards = ({ cards }) => {
       <CardsWrapper ref={scrollRef}>
         {cards.map((card, index) => (
           <Card key={index}>
+            {card.is_best_man ? (
+              <div className="best-man">Best Man</div>
+            ) : ""}
             <Image src={card.image} alt={card.title} />
             <Name>{card.name}</Name>
             <Title>{card.title}</Title>
@@ -114,5 +129,15 @@ const ScrollableCards = ({ cards }) => {
     </ScrollContainer>
   );
 };
+// ScrollableCards.propTypes = {
+//   cards: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       image: PropTypes.string.isRequired,
+//       name: PropTypes.string.isRequired,
+//       title: PropTypes.string.isRequired,
+//       social: PropTypes.string.isRequired,
+//     })
+//   ).isRequired,
+// };
 
 export default ScrollableCards;

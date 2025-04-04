@@ -80,7 +80,7 @@ const NavBar = ()=>{
     }
 
     return <NavBarStyle display={display}>
-        <Link to="#">
+        <Link to="/">
             <img src={Logo} />
         </Link>
 
