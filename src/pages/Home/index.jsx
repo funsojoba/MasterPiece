@@ -165,7 +165,7 @@ const Home = () =>{
         },
         {
             image: KINGIE,
-            name: "OlaoKingDavid Ayo-Loto",
+            name: "KingDavid Ayo-Loto",
             title: "Digital Creator and Marketing Executive  ",
             social: "@_kingie_"
         },
