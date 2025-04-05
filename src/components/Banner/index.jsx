@@ -1,6 +1,8 @@
 import styled from "styled-components";
 // import PropTypes from 'prop-types';
 
+import logo from "../../assets/logo.png"
+
 
 const BannerDiv = styled.div`
     height: 100vh;
@@ -11,6 +13,24 @@ const BannerDiv = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+
+
+    .image{
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 450px;
+            
+            @media only screen and (max-width:850px){
+                width: 250px;
+            }
+            
+            img{
+                width: 100%;
+            }
+        }
 `
 
 
@@ -18,12 +38,12 @@ const BannerDiv = styled.div`
 const Banner = ({background}) => {
     return (
         <BannerDiv background={background}>
-            <h1>MasterPiece</h1>
+            <div className="image">
+                <img src={logo} />
+            </div>
         </BannerDiv>
     );
 }
-// Banner.propTypes = {
-//     background: PropTypes.string.isRequired,
-// };
+
 
 export default Banner;

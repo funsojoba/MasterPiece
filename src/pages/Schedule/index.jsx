@@ -5,6 +5,7 @@ import Banner from "../../components/Banner";
 
 import BG_ONE from "../../assets/BGS/1.jpg"
 
+
 import {SectionOne, SectionTwo, Map} from "./style";
 
 
@@ -17,7 +18,7 @@ const Schedule = () => {
         <NavBar />
         <Banner background={BG_ONE} />
         <SectionOne>
-            <p>Friday 12th September, 2025</p>
+            <p><strong>Friday</strong> <br /> 12th September, 2025</p>
             <div className="content">
 
                 <div className="sec-one">
@@ -33,7 +34,7 @@ const Schedule = () => {
         </SectionOne>
 
         <SectionTwo>
-            <p>Saturday 13th September, 2025</p>
+            <p><strong>Saturday</strong> <br></br> 13th September, 2025</p>
             <div className="content">
                 <div className="sec-one">
                     <h2>Church Joining</h2>

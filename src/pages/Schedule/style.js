@@ -8,7 +8,6 @@ export const SectionOne = styled.div`
 
     p{
         text-align: center;
-        text-decoration: underline;
         @media only screen and (max-width:850px){
             text-align: left;
             
@@ -66,7 +65,6 @@ export const SectionTwo = styled.div`
 
     p{
         text-align: center;
-        text-decoration: underline;
     }
     
     .content{
@@ -85,6 +83,10 @@ export const SectionTwo = styled.div`
     
             h2{
                 font-size: 3em;
+            }
+
+            h4{
+                font-size: 2em;
             }
         }
     }

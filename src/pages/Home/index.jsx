@@ -4,7 +4,7 @@ import {
         SectionOne, Container, 
         SectionTwo, SectionThree, 
         CoupleSection, Meet, Story, 
-        Men, Women, Image } from "./style"
+        Men, Women } from "./style"
 
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -60,9 +60,8 @@ import DAMILOLA_IMG from "../../assets/WOMEN/adejumoke.jpg"
     TODO
 
     RSVP
-    GALLERY
     Content for the couple
-    Story
+
     Schedule
 `
 
@@ -264,43 +263,6 @@ const Home = () =>{
             social: "@theglobalmide"
         },
     ]
-
-
-    // const dynamicEl = [
-    //     {
-    //         src: BRIDD_IMG,
-    //         responsive: true,
-    //         thumb: '...',
-    //         subHtml: "Pelumi"
-    //     },
-    //     {
-    //         src: GROOM_IMG,
-    //         responsive: true,
-    //         subHtml: 'Oluwatobi'
-    //     },
-    // ];
-
-
-    // const photos = [
-    //     {
-    //       src: 'http://example.com/example/img1.jpg',
-    //       width: 4,
-    //       height: 3
-    //     },
-    //     {
-    //       src: 'http://example.com/example/img2.jpg',
-    //       width: 1,
-    //       height: 1
-    //     }
-    //   ];
-
-
-      const breakpoints = {
-        default: 4,
-        1100: 3,
-        700: 2,
-        500: 1,
-      };
 
     return (
         <Container>
