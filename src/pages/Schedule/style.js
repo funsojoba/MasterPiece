@@ -52,6 +52,14 @@ export const SectionOne = styled.div`
                     font-size: 2em;
                 }
             }
+
+            h4{
+                font-size: 2em;
+
+                @media only screen and (max-width:850px){
+                    font-size: 1.5em;
+                }
+            }
         }
     }
 

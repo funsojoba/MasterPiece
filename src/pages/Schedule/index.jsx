@@ -26,7 +26,7 @@ const Schedule = () => {
                     <h4>2:00pm</h4>
                 </div>
                 <div className="sec-one">
-                    <h2>Sound of Many Waters <br/> (Worship)</h2>
+                    <h2>Sound of Many Waters <br/> <em>(Worship)</em></h2>
                     <h4>8:00pm</h4>
                 </div>
             </div>
