@@ -148,7 +148,7 @@ const Home = () =>{
         {
             image: FAMOUS_IMG,
             name: "Famous Paul",
-            title: "Yahoo Boy",
+            title: "Software Engineer",
             social: "@famouspaul"
         },
         {
