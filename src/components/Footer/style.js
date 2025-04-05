@@ -27,7 +27,9 @@ export const FooterDiv = styled.div`
     .info{
         flex: 1;
         @media only screen and (max-width:850px){
-            justify-content: flex-start;
+            justify-content: center;
+            text-align: left;
+            margin-top: 20px;
         }
         
 

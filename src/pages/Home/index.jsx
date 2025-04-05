@@ -6,7 +6,9 @@ import {
         CoupleSection, Meet, Story, 
         Men, Women, Image } from "./style"
 
-import Masonry from "react-masonry-css";
+import 'react-medium-image-zoom/dist/styles.css'
+
+import Gallery from "../../components/Gallery"
 
 
 import logo from "../../assets/logo.png"
@@ -279,6 +281,20 @@ const Home = () =>{
     // ];
 
 
+    // const photos = [
+    //     {
+    //       src: 'http://example.com/example/img1.jpg',
+    //       width: 4,
+    //       height: 3
+    //     },
+    //     {
+    //       src: 'http://example.com/example/img2.jpg',
+    //       width: 1,
+    //       height: 1
+    //     }
+    //   ];
+
+
       const breakpoints = {
         default: 4,
         1100: 3,
@@ -357,8 +373,10 @@ const Home = () =>{
             <SectionThree>
                 <div className="text">
                     <div className="text-content">
-                        <h2 className="allison-regular">About the Bride</h2>
-                        <p className="montserrat-regular">Tobi is a nice guy, I honestly don’t know what he does, he sha comes and goes, but he’s a good boy so no panic</p>
+                        <h2 className="allison-regular">About the Groom</h2>
+                        <p className="montserrat-regular">
+                            Tobi is a nice guy, I honestly don&apos;t know what he does, he sha comes and goes, but he&apos;s a good boy so no panic
+                        </p>
                     </div>
                 </div>
 
@@ -373,17 +391,10 @@ const Home = () =>{
                     <h2 className="allison-regular">Our Story</h2>
                 </div>
                 <div className="gallery">
-                <Masonry 
-                    breakpointCols={breakpoints} 
-                    className="my-masonry-grid" 
-                    columnClassName="my-masonry-grid_column"
-                    >
-                    {images.map((src, index) => (
-                    <Image key={index} src={src} alt={`Gallery Image ${index}`} />
-                    ))}
-                    </Masonry>
+                    <Gallery />
                 </div>
             </Story>
+
 
             <Men>
                 <h2 className="montserrat-bold">Meet the Groom&apos;s Men</h2>
