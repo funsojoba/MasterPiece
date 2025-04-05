@@ -16,6 +16,10 @@ export const SectionOne = styled.div`
     background-repeat: no-repeat;
     background-position: center;
 
+    @media only screen and (max-width:850px){
+        height: 60vh;
+    }
+
     .content{
         position: relative;
         width: 100%;

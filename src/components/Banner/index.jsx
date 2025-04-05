@@ -15,6 +15,10 @@ const BannerDiv = styled.div`
     background-position: center;
     position: relative;
 
+    @media only screen and (max-width:850px){
+        height: 60vh;
+    }
+
 
     .image{
             position: absolute;
