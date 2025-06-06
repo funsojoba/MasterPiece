@@ -5,6 +5,8 @@ import './index.css'
 
 import Home from './pages/Home/index.jsx'
 import Schedule from './pages/Schedule/index.jsx'
+import Story from './pages/Story/index.jsx'
+import Gift from './pages/GIFT/index.jsx'
 
 import {
   createBrowserRouter,
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
     path: "/schedule",
     element: <Schedule />,
   },
+  {
+    path: "/story",
+    element: <Story />,
+  },
+  {
+    path: "/gift",
+    element: <Gift />,
+  }
 ])
 
 createRoot(document.getElementById('root')).render(

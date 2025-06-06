@@ -10,6 +10,18 @@ export const FooterDiv = styled.div`
     align-items: center;
     flex-wrap: wrap;
 
+    a{
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 15px;
+        font-family: "Montserrat", serif;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
     @media only screen and (max-width:850px){
         flex-direction: column;
         text-align: left;
@@ -21,6 +33,10 @@ export const FooterDiv = styled.div`
             width: 80%;
             margin: auto;
             color: #fff;
+
+            h2{
+                padding: 10px 15px;
+            }
         }
     }
 
@@ -32,18 +48,6 @@ export const FooterDiv = styled.div`
             margin-top: 20px;
         }
         
-
-        .links a{
-            text-decoration: none;
-            color: #fff;
-            display: inline-block;
-            padding: 10px 15px;
-            font-family: "Montserrat", serif;
-
-            &:hover{
-                text-decoration: underline;
-            }
-        }
 
         .buttons a{
             text-decoration: none;

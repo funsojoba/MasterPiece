@@ -309,8 +309,19 @@ const Home = () =>{
                 </div>
                 <div className="text">
                     <div className="text-content">
-                        <h2 className="allison-regular">Message From the Couple</h2>
-                        <p className="montserrat-regular">We&apos;re excited to share our special day with you! Please RSVP to let us know if you&apos;ll be attending in person, so we can reserve a seat, or join virtually, in which case we&apos;ll send you a link. We&apos;ll share additional details as they become available.</p>
+                        <h2 className="allison-regular">Welcome To Rehoboth</h2>
+                        {/* <p className="montserrat-regular">
+                            We&apos;re excited to share our special day with you! Please RSVP to let us know if you&apos;ll be attending in person, so we can reserve a seat, or join virtually, in which case we&apos;ll send you a link. We&apos;ll share additional details as they become available.
+                        </p> */}
+
+                        <p className="montserrat-regular">
+                         And he removed from thence, and digged another well; and for that they strove not: 
+                         and he called the name of it <strong>REHOBOTH</strong>; and he said, For now the LORD hath 
+                         made room for us, and we shall be fruitful in the land.
+                        <br/>
+                         <br/>
+                         <strong><em>Genesis 26:22 [KJV]</em></strong>
+                        </p>
                     </div>
                 </div>
             </CoupleSection>
@@ -327,7 +338,12 @@ const Home = () =>{
                 <div className="text">
                     <div className="text-content">
                         <h2 className="allison-regular">About the Bride</h2>
-                        <p className="montserrat-regular">Pelumi is a Chattered accountant, and an exceptional young woman who aims to change the world by impacting it positively.</p>
+                        <p className="montserrat-regular">
+                            Oluwapelumi is a skilled clinical Embryologist and a highly capable executive and administrative support professional. 
+                            What truly defines her, however, is her deep and abiding love for God. 
+                            This guiding principle brings a beautiful warmth and sincerity to her life, 
+                            influencing everything she does and making her a joy to be around.
+                        </p>
                     </div>
                 </div>
             </SectionThree>
@@ -337,7 +353,11 @@ const Home = () =>{
                     <div className="text-content">
                         <h2 className="allison-regular">About the Groom</h2>
                         <p className="montserrat-regular">
-                            Tobi is a nice guy, I honestly don&apos;t know what he does, he sha comes and goes, but he&apos;s a good boy so no panic
+                            Tobi is a proficient Christian Creative and passionate lover of God, called to minister through worship. 
+                            He serves as a minstrel with a heart for God&apos;s presence. 
+                            A trained geographer and the third of three children. 
+                            Beyond music &amp; media, Tobi is skilled in leadership and project management, 
+                            bringing vision and structure to every assignment.
                         </p>
                     </div>
                 </div>

@@ -7,20 +7,23 @@ const Footer = () => {
     return <FooterDiv>
         <div className="date">
             <div className="date-content">
-                <h2 className="montserrat-regular">SEPT. 13th, 2025</h2>
-                <p className="montserrat-regular">Somewhere in Ibadan sha, you will get the address if you are invited, if not, mind your business</p>
+                <h2 className="montserrat-regular">SEPT. 13<sup>th</sup>, 2025</h2>
+                <Link to="/schedule#map">
+                    God&apos;s Love Tabernacle International Church Camp Ground, Ijebu Ode Road, Idi Ayunre, Ibadan, Oyo State, Nigeria
+                </Link>
+                <p className="montserrat-regular">
+                </p>
             </div>
         </div>
 
         <div className="info">
             <div className="links">
-                <Link>Home</Link>
-                <Link>RSVP</Link>
-                <Link>STORY</Link>
-                <Link>SCHEDULE</Link>
+                <Link to="/">Home</Link>
+                <Link to="/story">STORY</Link>
+                <Link to="/schedule">SCHEDULE</Link>
             </div>
             <div className="buttons">
-                <Link>Send us a gift</Link>
+                <Link to="/gift" >Send us a gift</Link>
                 <Link>RSVP Here</Link>
             </div>
         </div>

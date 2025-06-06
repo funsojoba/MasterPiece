@@ -7,6 +7,11 @@ import { Link } from "react-router"
 import { FaBars } from "react-icons/fa"
 
 
+export const Bordered = styled.div`
+    a{
+        background-color: #8d6c93;
+    }
+ `
 
 const NavBarStyle = styled.div`
     
@@ -48,9 +53,13 @@ const NavBarStyle = styled.div`
             text-decoration: none;
             color: #fff;
             padding: 5px 8px;
+            display: inline-block;
+            border: solid 1px #fff;
+            transition: all 300ms ease-in;
 
             &:hover{
-                border: solid 1px #fff;
+                transform: scale(1.2);
+                box-shadow: 3px 7px 30px rgba(0,0,0,.6);
             }
 
         }
@@ -87,8 +96,11 @@ const NavBar = ()=>{
         <div className="links">
             <Link to="/">Home </Link>
             <Link>RSVP </Link>
-            <Link>STORY </Link>
+            <Link to="/story">STORY </Link>
             <Link to="/schedule">SCHEDULE </Link>
+            <Bordered>
+                <Link to="/gift">SEND A GIFT </Link>
+            </Bordered>
         </div>
         <div className="hambugger">
             <FaBars onClick={handleSetDisplay}/>
