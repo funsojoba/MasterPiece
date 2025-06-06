@@ -41,6 +41,7 @@ import SUNDAY from "../../assets/MEN/sunday.jpg"
 import DANIEL from "../../assets/MEN/agbaje.jpg"
 import KINGIE from "../../assets/MEN/king-david.jpg"
 import IFETOBI from "../../assets/MEN/ifetobi.jpg"
+import BARNABAS from "../../assets/MEN/BARNABAS.jpg"
 
 
 // women
@@ -162,6 +163,12 @@ const Home = () =>{
             name: "Olaoluwa Damilola",
             title: "Construction project manager ",
             social: "@dhamie_laolu"
+        },
+        {
+            image: BARNABAS,
+            name: "Barnabas Okunlola",
+            title: "Content Manager",
+            social: "@hishael",
         },
         {
             image: KINGIE,
