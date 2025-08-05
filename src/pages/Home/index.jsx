@@ -210,9 +210,21 @@ const Home = () =>{
 
     const womensCard = [
         {
+            image: ESTHER_ADETOLA,
+            name: "Fabiyi Esther Adetola",
+            title: "Virtual Assistant ",
+            social: "@entioluwayan"
+        },
+        {
+            image: YETUNDE,
+            name: "Oni Ayomide",
+            title: "Registered Nurse",
+            social: "@theglobalmide"
+        },
+        {
             image: ESTHER_IMG,
             name: "Esther Akintayo",
-            title: "Territory Manager",
+            title: "Finance coach",
             social: "@theestherakintayo"
         },
         {
@@ -246,12 +258,6 @@ const Home = () =>{
             social: "@IBK homes "
         },
         {
-            image: ESTHER_ADETOLA,
-            name: "Fabiyi Esther Adetola",
-            title: "Virtual Assistant ",
-            social: "@entioluwayan"
-        },
-        {
             image: TITILAYO,
             name: "Titilayo Obadara",
             title: "Scrum Master/ IT Prog Manager",
@@ -262,12 +268,6 @@ const Home = () =>{
             name: "Akinyoola Praise",
             title: "",
             social: "@tehillah_omofunmilola"
-        },
-        {
-            image: YETUNDE,
-            name: "Oni Ayomide",
-            title: "Registered Nurse",
-            social: "@theglobalmide"
         },
     ]
 
@@ -328,6 +328,9 @@ const Home = () =>{
                         <br/>
                          <br/>
                          <strong><em>Genesis 26:22 [KJV]</em></strong>
+                         <br/>
+                         <br/>
+                         <em>#thisisrehoboth</em>
                         </p>
                     </div>
                 </div>
