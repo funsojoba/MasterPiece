@@ -55,6 +55,7 @@ import YETUNDE from "../../assets/WOMEN/yetunde.jpg"
 import GIFT from "../../assets/WOMEN/gift.jpg"
 import VIVIAN from "../../assets/WOMEN/vivian.jpg"
 import DAMILOLA_IMG from "../../assets/WOMEN/adejumoke.jpg"
+import OKIKI from "../../assets/WOMEN/okiki.jpg"
 
 
 `
@@ -213,7 +214,8 @@ const Home = () =>{
             image: ESTHER_ADETOLA,
             name: "Fabiyi Esther Adetola",
             title: "Virtual Assistant ",
-            social: "@entioluwayan"
+            social: "@entioluwayan",
+            is_best_woman: true
         },
         {
             image: YETUNDE,
@@ -244,6 +246,12 @@ const Home = () =>{
             name: "Oluwanifemi Olaobaju",
             title: "Financial Control Personnel",
             social: "@_oluwanifemi_"
+        },
+        {
+            image: OKIKI,
+            name: "Okiki Ajala",
+            title: "Corporate Comms Specialist",
+            social: "@okiki_ajala",
         },
         {
             image: VIVIAN,
@@ -317,9 +325,6 @@ const Home = () =>{
                 <div className="text">
                     <div className="text-content">
                         <h2 className="allison-regular">Welcome To Rehoboth</h2>
-                        {/* <p className="montserrat-regular">
-                            We&apos;re excited to share our special day with you! Please RSVP to let us know if you&apos;ll be attending in person, so we can reserve a seat, or join virtually, in which case we&apos;ll send you a link. We&apos;ll share additional details as they become available.
-                        </p> */}
 
                         <p className="montserrat-regular">
                          And he removed from thence, and digged another well; and for that they strove not: 

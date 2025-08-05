@@ -116,6 +116,9 @@ const ScrollableCards = ({ cards }) => {
             {card.is_best_man ? (
               <div className="best-man">Best Man</div>
             ) : ""}
+            {card.is_best_woman ? (
+              <div className="best-man">Chief Bride&apos;s Maid</div>
+            ) : ""}
             <Image src={card.image} alt={card.title} />
             <Name>{card.name}</Name>
             <Title>{card.title}</Title>
