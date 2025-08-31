@@ -50,10 +50,32 @@ export const SectionOne = styled.div`
 `
 
 
-export const SectionTwo = styled.div`
-    color: #F5F5DC;
-    padding: 20px;
+export const GiftSection = styled.div`
     background: #550000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+    a{
+        display: inline-block;
+        background-color: #F5F5DC;
+        text-decoration: none;
+        padding: 15px 20px;
+        color: #550000;
+        transition: all 300ms ease;
+
+        &:hover{
+            transform: translateY(5px);
+        }
+    }
+    `
+
+
+export const SectionTwo = styled.div`
+    background: #151515ff;
+    padding: 20px;
+    color: #550000;
     
     .timer{
         display: flex;

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { 
         SectionOne, Container, 
         SectionTwo, SectionThree, 
+        GiftSection,
         CoupleSection, Meet, Story, 
         Men, Women } from "./style"
 
@@ -56,6 +57,7 @@ import GIFT from "../../assets/WOMEN/gift.jpg"
 import VIVIAN from "../../assets/WOMEN/vivian.jpg"
 import DAMILOLA_IMG from "../../assets/WOMEN/adejumoke.jpg"
 import OKIKI from "../../assets/WOMEN/okiki.jpg"
+import { Link } from "react-router"
 
 
 `
@@ -291,6 +293,10 @@ const Home = () =>{
 
                 </div>
             </SectionOne>
+            <GiftSection>
+                <Link to="/gift">Send Us A Gift</Link>
+            </GiftSection>
+
             <SectionTwo>
                     <div className="timer">
                         <div className="timer-child montserrat-regular" id="days">

@@ -6,7 +6,13 @@ import BG_ONE from "../../assets/BGS/2.jpg";
 import { SectionOne, SectionTwo } from "./style";
 
 import IMAGE_1 from "../../assets/story/image_1.png"
-import IMAGE_2 from "../../assets/story/image_2.png"
+import IMAGE_2 from "../../assets/story/INTRO.jpg"
+import IMAGE_3 from "../../assets/story/image_3.jpg"
+import IMAGE_4 from "../../assets/story/image_4.jpg"
+import IMAGE_5 from "../../assets/story/image_5.jpg"
+import IMAGE_6 from "../../assets/story/image_6.jpg"
+import IMAGE_7 from "../../assets/story/image_7.jpg"
+
 
 
 
@@ -16,9 +22,9 @@ const Story = () => {
         <div>
         <NavBar />
         <Banner background={BG_ONE} />
-        <SectionOne>
+        <SectionOne background="#c68f61">
             <div className="image">
-                <img src={IMAGE_1} alt="" />
+                <img src={IMAGE_2} alt="" />
             </div>
             <div className="content">
                 <div className="text">
@@ -34,7 +40,7 @@ const Story = () => {
             </div>
         </SectionOne>
 
-        <SectionTwo>
+        <SectionTwo background="#d2bcc8">
             <div className="content">
                 <div className="text">
                     <h1>What was your first impression of each other?</h1>
@@ -49,13 +55,13 @@ const Story = () => {
             </div>
 
             <div className="image">
-                <img src={IMAGE_2} alt="" />
+                <img src={IMAGE_3} alt="" />
             </div>
         </SectionTwo>
         
-        <SectionOne>
+        <SectionOne background="#ca9970">
             <div className="image">
-                <img src={IMAGE_1} alt="" />
+                <img src={IMAGE_4} alt="" />
             </div>
             <div className="content">
                 <div className="text">
@@ -71,7 +77,7 @@ const Story = () => {
             </div>
         </SectionOne>
 
-        <SectionTwo>
+        <SectionTwo background="#d8c4c5">
             <div className="content">
                 <div className="text">
                     <h1>What is your partner&apos;s favorite movie genre?</h1>
@@ -86,13 +92,13 @@ const Story = () => {
             </div>
 
             <div className="image">
-                <img src={IMAGE_2} alt="" />
+                <img src={IMAGE_6} alt="" />
             </div>
         </SectionTwo>
 
-        <SectionOne>
+        <SectionOne background="#bea297">
             <div className="image">
-                <img src={IMAGE_1} alt="" />
+                <img src={IMAGE_5} alt="" />
             </div>
             <div className="content">
                 <div className="text">
@@ -108,7 +114,7 @@ const Story = () => {
             </div>
         </SectionOne>
 
-        <SectionTwo>
+        <SectionTwo background="#c58f61">
             <div className="content">
                 <div className="text">
                     <h1>What do you love most about each other?</h1>
@@ -127,11 +133,11 @@ const Story = () => {
             </div>
 
             <div className="image">
-                <img src={IMAGE_2} alt="" />
+                <img src={IMAGE_7} alt="" />
             </div>
         </SectionTwo>
 
-         <SectionOne>
+         <SectionOne color="#000">
             <div className="image">
                 <img src={IMAGE_1} alt="" />
             </div>

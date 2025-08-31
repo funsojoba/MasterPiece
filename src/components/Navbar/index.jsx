@@ -54,8 +54,7 @@ const NavBarStyle = styled.div`
             color: #fff;
             padding: 5px 8px;
             display: inline-block;
-            border: solid 1px #fff;
-            transition: all 300ms ease-in;
+            transition: all 100ms ease-in;
 
             &:hover{
                 transform: scale(1.2);

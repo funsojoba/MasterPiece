@@ -7,20 +7,21 @@ import styled from "styled-components";
 
 export const SectionOne = styled.div`
     width: 100%;
-    padding: 50px;
-    background: #fff;
-    color: #000;
+    /* background: #c68f61; */
+    background-color: ${({ background }) => background || "#fff"};
+    color: ${({ color }) => color || "#fff"};
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", serif;
 
     @media only screen and (max-width:1100px){
+        
         h1{
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
 
@@ -31,9 +32,11 @@ export const SectionOne = styled.div`
 
         .text{
             width: 60%;
+            margin: 10px;
 
             @media only screen and (max-width:790px){
                 width: 100%;
+                padding: 30px;
             }
         }
     }
@@ -54,9 +57,8 @@ export const SectionOne = styled.div`
 // background: #F5F5DC;
 export const SectionTwo = styled.div`
     width: 100%;
-    padding: 50px;
-    background: #F5F5DC;
-    color: #000;
+    background-color: ${({ background }) => background || "#fff"};
+    color: ${({ color }) => color || "#000"};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,9 +74,8 @@ export const SectionTwo = styled.div`
     }
 
     @media only screen and (max-width:1100px){
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-
 
     .content{
         flex: 1;
@@ -86,6 +87,7 @@ export const SectionTwo = styled.div`
 
             @media only screen and (max-width:790px){
                 width: 100%;
+                padding: 30px;
             }
         }
     }
