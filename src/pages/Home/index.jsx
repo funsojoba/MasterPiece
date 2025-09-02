@@ -295,7 +295,7 @@ const Home = () =>{
             </SectionOne>
             <GiftSection>
                 <Link to="/gift">Send Us A Gift</Link>
-            </GiftSection>
+            </GiftSection> 
 
             <SectionTwo>
                     <div className="timer">
