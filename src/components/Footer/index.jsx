@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="date">
             <div className="date-content">
                 <h2 className="montserrat-regular">SEPT. 13<sup>th</sup>, 2025</h2>
-                <Link to="/schedule#map">
+                {/* <Link to="/schedule#map">
                     God&apos;s Love Tabernacle International Church Camp Ground, Ijebu Ode Road, Idi Ayunre, Ibadan, Oyo State, Nigeria
                 </Link>
                 <p className="montserrat-regular">
-                </p>
+                </p> */}
             </div>
         </div>
 
