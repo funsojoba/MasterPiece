@@ -6,7 +6,7 @@ import {
         GiftSection,
         CoupleSection, Meet, Story, 
         Men, Women } from "./style"
-
+import ImageSlider from "./slider"
 import 'react-medium-image-zoom/dist/styles.css'
 
 import Gallery from "../../components/Gallery"
@@ -26,6 +26,12 @@ import BG_FIVE from "../../assets/BGS/5.jpg"
 import BRIDD_IMG from "../../assets/bride.jpg"
 import GROOM_IMG from "../../assets/groom.jpg"
 import COUPLE_IMG from "../../assets/couple.jpg"
+import COUPLE_1 from "../../assets/couple_1.jpg"
+import COUPLE_2 from "../../assets/couple_2.jpg"
+import COUPLE_3 from "../../assets/couple_3.jpg"
+import COUPLE_4 from "../../assets/couple_4.jpg"
+import COUPLE_5 from "../../assets/couple_5.jpg"
+import COUPLE_6 from "../../assets/couple_6.jpg"
 
 // import FUNSO_IMG from "../../assets/MEN/funso.jpg"
 import FUNSO_IMG_2 from "../../assets/MEN/funso_2.jpg"
@@ -59,15 +65,6 @@ import DAMILOLA_IMG from "../../assets/WOMEN/adejumoke.jpg"
 import OKIKI from "../../assets/WOMEN/okiki.jpg"
 import { Link } from "react-router"
 
-
-`
-    TODO
-
-    RSVP
-    Content for the couple
-
-    Schedule
-`
 
 
 const Home = () =>{
@@ -106,6 +103,10 @@ const Home = () =>{
         BG_FOUR,
         BG_FIVE
     ];
+
+    const couple_images = [
+        COUPLE_IMG, COUPLE_1, COUPLE_2, COUPLE_3, COUPLE_4, COUPLE_5, COUPLE_6
+    ]
 
     useEffect(() => {
         let index = 0;
@@ -325,7 +326,7 @@ const Home = () =>{
             <CoupleSection>
                 <div className="image">
                     <div className="image-content">
-                        <img src={COUPLE_IMG} alt="couple" />
+                        <ImageSlider images={couple_images} />
                     </div>
                 </div>
                 <div className="text">
