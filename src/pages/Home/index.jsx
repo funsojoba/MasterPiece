@@ -22,6 +22,12 @@ import BG_TWO from "../../assets/BGS/2.jpg"
 import BG_THREE from "../../assets/BGS/3.jpg"
 import BG_FOUR from "../../assets/BGS/4.jpg"
 import BG_FIVE from "../../assets/BGS/5.jpg"
+import BG_SIX from "../../assets/BGS/6.jpg"
+import BG_SEVEN from "../../assets/BGS/7.jpg"
+import BG_EIGHT from "../../assets/BGS/8.jpg"
+import BG_NINE from "../../assets/BGS/9.jpg"
+import BG_TEN from "../../assets/BGS/10.jpg"
+
 
 import BRIDD_IMG from "../../assets/bride.jpg"
 import GROOM_IMG from "../../assets/groom.jpg"
@@ -97,11 +103,16 @@ const Home = () =>{
 
 
     const images = [
+        BG_SEVEN,
         BG_ONE,
         BG_TWO,
         BG_THREE,
         BG_FOUR,
-        BG_FIVE
+        BG_FIVE,
+        BG_SIX,
+        BG_EIGHT,
+        BG_NINE,
+        BG_TEN
     ];
 
     const couple_images = [
