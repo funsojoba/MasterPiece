@@ -19,8 +19,6 @@ import ScrollableCards from "../../components/ScrollCard"
 
 import BG_ONE from "../../assets/BGS/1.jpg"
 import BG_TWO from "../../assets/BGS/2.jpg"
-import BG_THREE from "../../assets/BGS/3.jpg"
-import BG_FOUR from "../../assets/BGS/4.jpg"
 import BG_FIVE from "../../assets/BGS/5.jpg"
 import BG_SIX from "../../assets/BGS/6.jpg"
 import BG_SEVEN from "../../assets/BGS/7.jpg"
@@ -104,10 +102,7 @@ const Home = () =>{
 
     const images = [
         BG_SEVEN,
-        BG_ONE,
         BG_TWO,
-        BG_THREE,
-        BG_FOUR,
         BG_FIVE,
         BG_SIX,
         BG_EIGHT,
