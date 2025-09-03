@@ -17,7 +17,7 @@ import NavBar from "../../components/Navbar"
 import Footer from "../../components/Footer"
 import ScrollableCards from "../../components/ScrollCard"
 
-import BG_ONE from "../../assets/BGS/1.jpg"
+
 import BG_TWO from "../../assets/BGS/2.jpg"
 import BG_FIVE from "../../assets/BGS/5.jpg"
 import BG_SIX from "../../assets/BGS/6.jpg"
@@ -72,7 +72,7 @@ import { Link } from "react-router"
 
 
 const Home = () =>{
-    const [backgroundImg, setBackgroundImg] = useState(BG_ONE)
+    const [backgroundImg, setBackgroundImg] = useState(BG_EIGHT)
     const [days, setDays] = useState(0)
     const [hours, setHours] = useState(0)
     const [minutes, setMinutes] = useState(0)
