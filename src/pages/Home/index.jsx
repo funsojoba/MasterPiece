@@ -240,7 +240,7 @@ const Home = () =>{
         },
         {
             image: DAMILOLA_IMG,
-            name: "Oluwadamilola Adeyinka",
+            name: "Oluwadamilola Yakubu",
             title: "",
             social: "@dammyy___"
         },
